@@ -8,7 +8,8 @@
 **/.idea/**/codeStyleConfig.xml
 **/.idea/shelf/*
 **/.idea/dictionaries
-
+/Logs/
+/Logs/*
 
 
 # Rider code (IntelliJ excludes)
