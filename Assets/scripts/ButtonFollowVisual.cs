@@ -5,7 +5,7 @@ public class ButtonFollowVisual : MonoBehaviour
 {
     public Transform visualTarget;
     public Vector3 localAxis;
-    public Vector3 maximumChange;
+    public Vector3 maxOffset;
     public float resetSpeed = 5;
     public float followAngleThreshold = 45;
 
@@ -22,7 +22,6 @@ public class ButtonFollowVisual : MonoBehaviour
     private void Start()
     {
         initialLocalPos = visualTarget.localPosition;
-
         interactable = GetComponent<XRBaseInteractable>();
         interactable.hoverEntered.AddListener(Follow);
         interactable.hoverExited.AddListener(ResetPos);
@@ -52,14 +51,10 @@ public class ButtonFollowVisual : MonoBehaviour
         if (hover.interactorObject is XRPokeInteractor)
         {
             var interactor = (XRPokeInteractor)hover.interactorObject;
-
             isFollowing = true;
-
             pokeAttachTransform = interactor.attachTransform;
             offset = visualTarget.position - pokeAttachTransform.position;
-
             var pokeAngle = Vector3.Angle(offset, visualTarget.TransformDirection(localAxis));
-
             if (pokeAngle > followAngleThreshold)
             {
                 isFollowing = false;
