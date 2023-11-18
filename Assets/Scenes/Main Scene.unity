@@ -1221,6 +1221,7 @@ MonoBehaviour:
     type: 3}
   objectPosition: {fileID: 159831717}
   rayLenght: 0.03
+  tagName: document
 --- !u!1 &162973655
 GameObject:
   m_ObjectHideFlags: 0
@@ -11969,6 +11970,7 @@ MonoBehaviour:
     type: 3}
   objectPosition: {fileID: 8804753619314570957}
   rayLenght: 0.03
+  tagName: document
 --- !u!23 &8809007802686162025
 MeshRenderer:
   m_ObjectHideFlags: 0
