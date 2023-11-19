@@ -53,7 +53,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _intersection_depth: 0.5
+    - _intersection_depth: 1.42
     m_Colors:
-    - _intersection_color: {r: 11.313708, g: 11.313708, b: 11.313708, a: 1}
+    - _intersection_color: {r: 1.4980394, g: 1.4980394, b: 1.4980394, a: 1}
   m_BuildTextureStacks: []

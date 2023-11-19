@@ -18,13 +18,13 @@ public class ButtonPushOpenBlinds : MonoBehaviour
     public void BlindsOpen()
     {
         isOpen = true;
-        animator.SetBool(boolName, true);
+        animator.SetBool(boolName, isOpen);
 
     }
     
     public void OpenAnimationEnd()
     {
         isOpen = false;
-        animator.SetBool(boolName, false);
+        animator.SetBool(boolName, isOpen);
     }
 }

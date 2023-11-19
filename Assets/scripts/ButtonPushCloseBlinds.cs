@@ -18,11 +18,11 @@ public class ButtonPushCloseBlinds : MonoBehaviour
     public void BlindsClose()
     {
         isClose = true;
-        animator.SetBool(boolName, true);
+        animator.SetBool(boolName, isClose);
     }
     public void CloseAnimationEnd()
     {
         isClose = false;
-        animator.SetBool(boolName, false);
+        animator.SetBool(boolName, isClose);
     }
 }
