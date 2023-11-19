@@ -1,8 +1,13 @@
 using System;
+using System.Data.Common;
 using UnityEngine;
+using RealtimeCSG;
+using RealtimeCSG.Components;
+
 
 public class PutStamp : MonoBehaviour
 {
+    public GameObject passportObject;
     public GameObject decalPrefab;
     public Transform objectPosition;
     public float rayLenght;
@@ -16,5 +21,12 @@ public class PutStamp : MonoBehaviour
         if (hit.collider.tag != tagName) return;
         var normalToRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
         Instantiate(decalPrefab, hit.point, normalToRotation);
+        
+    }
+
+    private void Union()
+    {
+        var res = passportObject;
+        var CSG = new CSGModel();
     }
 }
