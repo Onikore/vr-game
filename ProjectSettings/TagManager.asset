@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ray
+    uniqueID: 2731635599
+    locked: 0
