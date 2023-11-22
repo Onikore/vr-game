@@ -14,6 +14,14 @@
 /[Ll]ogs/
 
 
+
+# User-specific stuff:
+/.UserSettings/
+*/.UserSettings/
+**/.UserSettings/**/workspace.xml
+/UserSettings/
+/UserSettings
+/UserSettings/*
 # Rider code (IntelliJ excludes)
 
 # Gradle:
